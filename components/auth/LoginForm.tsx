@@ -39,8 +39,7 @@ export const LoginForm = () => {
 		startTransition(() => {
 			login(values).then((data) => {
 				setError(data?.error);
-				// TODO when add 2FA
-				//setSuccess(data?.success);
+				setSuccess(data?.success);
 			});
 		});
 	};
