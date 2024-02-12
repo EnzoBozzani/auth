@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Auth</h1>
 
-## Getting Started
+> Project Status: Finished (February 12, 2024)
 
-First, run the development server:
+### Topics
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+:small_blue_diamond: [Project Description](#project-description)
+
+:small_blue_diamond: [Features](#features)
+
+:small_blue_diamond: [Dependencies](#dependencies)
+
+:small_blue_diamond: [Run App](#run-application)
+
+## Project Description
+
+<p align="justify">
+  Built with Next.js, TypeScript, and React, this project focuses on creating a highly secure authentication system using NextAuth/AuthJS. It supports traditional credentials login and registration, as well as integration with external services like Google and GitHub. The system prioritizes security with Two-Factor Authentication during login.
+</p>
+
+## Features
+
+:heavy_check_mark: Login and register using traditional credentials or external services (Google and GitHub). Update user info, as well as access current user data on client and server components.
+
+## Dependencies
+
+:warning: Node
+<br>
+:warning: TypeScript
+<br>
+:warning: NextJS
+<br>
+:warning: ReactJS
+<br>
+:warning: Tailwind
+
+PROJECT IS AVAILABLE: [https://auth-enzobozzani.vercel.app](https://auth-enzobozzani.vercel.app)
+
+:warning: (not all features available in the project. To test all features, follow instructions below to run the app.)
+
+## Run application:
+
+Clone project:
+
+```
+git clone https://github.com/EnzoBozzani/taskify-trello-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Setup environment variables:
 
-## Learn More
+```
+DATABASE_URL=
+DIRECT_URL=
 
-To learn more about Next.js, take a look at the following resources:
+AUTH_SECRET=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
-## Deploy on Vercel
+RESEND_API_KEY=
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_APP_URL=
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Setup prisma:
+
+```
+npx prisma generate
+npx prisma db push
+```
+
+Run project:
+
+```
+npm run dev
+```
