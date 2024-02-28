@@ -34,10 +34,6 @@
 <br>
 :warning: Tailwind
 
-PROJECT IS AVAILABLE: [https://auth-enzobozzani.vercel.app](https://auth-enzobozzani.vercel.app)
-
-:warning: (not all features available in the project. To test all features, follow instructions below to run the app.)
-
 ## Run application:
 
 Clone project:
